@@ -42,11 +42,6 @@ To run the application, follow these steps:
 3.  Run the FastAPI back-end using: `uvicorn main:app --reload`
 4.  Start the front-end development server using: `npm run dev`
 
-Backend Code Snippet
---------------------
-
-
-`import random from fastapi import FastAPI from fastapi.middleware.cors import CORSMiddleware from pydantic import BaseModel from fastapi import HTTPException, Form from character import Character import io import json import whisper  # Additional code...`
 
 Frontend Setup
 --------------
@@ -60,8 +55,7 @@ Frontend Setup
 Dependencies
 ------------
 
-
-`import llama_index from llama_index.llms import Gemini from dotenv import load_dotenv from llama_index.vector_stores import ChromaVectorStore from llama_index.storage.storage_context import StorageContext import llama_hub from llama_index import download_loader import json from llama_index import ServiceContext from pathlib import Path from llama_index import (     SimpleDirectoryReader,     VectorStoreIndex,     StorageContext,     load_index_from_storage, ) from langchain_google_genai import GoogleGenerativeAIEmbeddings from llama_index.tools import QueryEngineTool, ToolMetadata from llama_index.agent import ReActAgent from llama_index.tools.tool_spec.load_and_search.base import LoadAndSearchToolSpec from llama_hub.tools.wikipedia import WikipediaToolSpec  # Additional dependencies...`
+All the modules included in character.py along with langchain
 
 **Important Note:** Make sure to set up the required environment variables and configurations specified in the `.env` file.
 
